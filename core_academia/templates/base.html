@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilo01.css' %}">
+    <title>
+        {%block title%}
+        {% endblock title %}
+    </title>
+</head>
+<body>
+    <header>
+        {% include 'nav.html' %}
+    </header>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer>
+        <p>&copy; 2023 Core Academia. All rights reserved.</p>
+    </footer>
+</body>
+</html>

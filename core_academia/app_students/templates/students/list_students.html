@@ -1,0 +1,36 @@
+{% extends "students/base.html" %}
+{% block title %}
+Lista de Estudiantes
+{% endblock title %}
+{%block navbar %}
+    {% include "students/nav.html" %}
+{% endblock navbar %}
+
+{% block contenido %}
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo Electronico</th>
+            <th>telefono</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>01</td>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>juanperez@gmail.com</td>
+            <td>1234567890</td>
+        </tr>
+        <tr>
+            <td colspan="6">No hay estudiantes registrados.</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock contenido %}
+
+
